@@ -1,0 +1,61 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.signin-content {
+  padding: 60px 1rem;
+}
+
+.full-width-input {
+  width: 100%;
+}
+
+.error-snackbar {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.success-snackbar {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+}
+
+img{
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

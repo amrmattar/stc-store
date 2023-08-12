@@ -1,0 +1,37 @@
+.navbar {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-right: 8px;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-username {
+  margin-left: 8px;
+  color: #4E008D;
+}
+
+img{
+  width: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+}

@@ -1,0 +1,29 @@
+<mat-toolbar class="navbar" *ngIf="isLoggedIn(); ">
+  <div class="navbar-left">
+    <img src="../../../assets/img/STC.svg.png" alt="" srcset="">
+  </div>
+  <div class="navbar-right">
+    <ng-container >
+      <mat-icon>account_circle</mat-icon>
+      <span class="navbar-username">{{ authService.getUser() }}</span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </ng-container>
+    <ng-template >
+      <button mat-icon-button [matMenuTriggerFor]="loginMenu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #loginMenu="matMenu">
+        <button mat-menu-item routerLink="/login">
+          <span>Login</span>
+        </button>
+      </mat-menu>
+    </ng-template>
+  </div>
+</mat-toolbar>

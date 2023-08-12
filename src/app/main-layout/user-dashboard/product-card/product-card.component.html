@@ -1,0 +1,12 @@
+
+    <mat-card class="product-card" [@fadeInUp]>
+      <mat-card-header>
+        <mat-card-title >{{ product?.title| truncate: 13 }}</mat-card-title>
+        <mat-card-subtitle>Category: {{ product?.category }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="product?.image" alt="{{ product?.title }}">
+      <mat-card-content>
+        <p >{{ product?.description | truncate: 20}}</p>
+        <p>Price: {{ product?.price }}</p>
+      </mat-card-content>
+    </mat-card>

@@ -1,0 +1,26 @@
+<div class="signin-content">
+  <img src="../../../assets/img/STC.svg.png" alt="" srcset="">
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h2>Please login to continue</h2>
+        <mat-form-field class="full-width-input">
+          <mat-label>UserName</mat-label>
+          <input matInput placeholder="User" formControlName="userName" autocomplete="true" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your user name
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Password" formControlName="password" autocomplete="false" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your password
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" >Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
